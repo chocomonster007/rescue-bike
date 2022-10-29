@@ -1,0 +1,99 @@
+ul{display:flex;
+    justify-content: space-between;
+    width:60%;
+    margin: auto;
+
+}
+body{margin: 0;
+    font-family: sans-serif;
+    }
+
+
+header{display: flex;
+        background-color: rgba(255,0,0,1);
+        align-items: center;
+        width: 100%;
+        position: fixed;
+    top:0;
+    height: 60px;}
+.fake{
+    height: 60px;
+}
+li{list-style: none;}
+a{text-decoration: none;
+    color: white;
+    padding: 21.5px 20px;
+    font-weight: 500;}
+.logo{margin:0;
+    
+    padding: 20px 20px  ;}
+
+    
+
+a:hover{background-color: white;
+        color: red;
+        
+        }
+section{width: 90%;
+        margin: auto;
+        text-align: center;
+        }
+h1{font-weight: 800;
+    font-size: 2em;}
+
+.haut{text-align: center;
+    margin-top: 10vh;
+}
+img{width: 45%;}
+p{width:45%;
+margin: 0px 20px;}
+.cargo{justify-content: center;
+        display: flex;
+        align-items: center;}
+.reparation{justify-content: center;
+    display: flex;
+    align-items: center;}
+.atelier{justify-content: center;
+    display: flex;
+    align-items: center;
+margin-top: 3vh;}
+
+@media (max-width:780px) {
+    header{display: block;
+        background-color: white;
+        position: static;
+    top: 0;}
+    ul{width: 100%;
+        background-color: red;
+        height:40px ;
+        margin: 0;
+        align-items: center;
+    justify-content: space-evenly;
+    padding: 0;}
+    .logo{text-align: center;}
+    a{padding: 0px 0px;}
+    .fake{height: 0px;}
+
+@media (max-width:670px){
+    .cargo{flex-direction: column;
+        position: relative;
+        justify-content: center;}
+    .reparation{flex-direction: column-reverse;
+    margin-top: 3vh;
+    justify-content: center;}
+    .atelier{flex-direction: column;
+        margin-top: 3vh;
+        justify-content: center;}
+    img{width: 80%;}
+    p{width: 80%;
+        margin-top: 2vh;}
+    .cargo::before{position: absolute;
+                    top: 20px;
+                    content: '';
+                    height: 1px;
+                    width: 90%;
+                    background-color: grey;
+                    opacity: 0.5;}
+}
+    
+}
